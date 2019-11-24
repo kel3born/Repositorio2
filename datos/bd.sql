@@ -36,6 +36,7 @@ CREATE TABLE IF NOT EXISTS `persona` (
   `nombre` varchar(255) NOT NULL,
   `apellido` varchar(255) NOT NULL,
   `correo` varchar(255) NOT NULL,
+  `Tel` varchar(255) NOT NULL,
   `direccion` varchar(255) NOT NULL,
   `tipodoc` varchar(255) DEFAULT NULL,
   `documento` varchar(2555) DEFAULT NULL,
@@ -49,6 +50,7 @@ CREATE TABLE IF NOT EXISTS `persona` (
 INSERT INTO `persona` (`Id`, `nombre`, `apellido`, `correo`, `direccion`, `tipodoc`, `documento`) VALUES
 (1, 'dayana cogaria', 'colombiana', '0', '', NULL, NULL),
 (3, 'day', '234', '0', '', NULL, NULL);
+(4, 'Juan Cancino', 'colombiana', '0', '', CEDULA, (80888755))
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
